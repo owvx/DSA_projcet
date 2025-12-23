@@ -1,4 +1,4 @@
-#include "XML_to_graph.h"
+#include "XMLtograph.h"
 #include "../XMLParser.h"
 
 user::user() {
@@ -118,4 +118,5 @@ void visualizeGraph(const string& dotFile, const string& outputFile) {
         cerr << "Error visualizing graph." << endl;
     }
 }
+
 
