@@ -34,8 +34,10 @@ static string getNodeText(XmlNode* n) {
 
 // Build users map from parsed XmlNode tree
 map<int,user> xmlToGraphFromTree(XmlNode* root) {
-    map<int,user> users;
+ map<int,user> users;
     if (!root) return users;
+
+    
 
     // Expect root->name == "users" or root contains users as children
     for (XmlNode* uNode : root->children) {
@@ -69,20 +71,22 @@ map<int,user> xmlToGraphFromTree(XmlNode* root) {
 
         XmlNode* followersNode = findChild(uNode, "followers");
         if (followersNode) {
+            
             for (XmlNode* fNode : followersNode->children) {
-                if (!fNode || fNode->name != "follower") continue;
+                if (!fNode) { continue; }
+                if (fNode->name != "follower") { continue; }
                 XmlNode* fid = findChild(fNode, "id");
                 string fidText = getNodeText(fid);
                 if (!fidText.empty()) usr.followers.push_back(stoi(fidText));
             }
         }
 
-        // if (usr.id != 0) {
-        //     users[usr.id] = usr;
-        //     cerr << "[xmlToGraphFromTree] added user id=" << usr.id << " name='" << usr.name << "' followers=" << usr.followers.size() << "\n";
-        // } else {
-        //     cerr << "[xmlToGraphFromTree] skipping user with no id\n";
-        // }
+        if (usr.id != 0) {
+            users[usr.id] = usr;
+            cerr << "[xmlToGraphFromTree] added user id=" << usr.id << " name='" << usr.name << "' followers=" << usr.followers.size() << "\n";
+        } else {
+            cerr << "[xmlToGraphFromTree] skipping user with no id\n";
+        }
     }
 
     return users;
@@ -119,6 +123,3 @@ void visualizeGraph(const string& dotFile, const string& outputFile) {
         cerr << "Error visualizing graph." << endl;
     }
 }
-
-
-
