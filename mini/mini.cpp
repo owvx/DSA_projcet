@@ -1,4 +1,4 @@
-#include "Minifying.h"
+#include "mini.h"
 #include "../XMLParser.h"
 
 static void minifyNode(XmlNode* node, ostream &out) {
@@ -31,4 +31,5 @@ void minifying(const string& fileName, string output) {
     freeXmlTree(root);
     cout << "File '" << output << "' has been minified successfully." << endl;
 }
+
 
