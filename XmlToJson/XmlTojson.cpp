@@ -1,4 +1,4 @@
-#include "XMLTojson.h"
+#include "XmlTojson.h"
 #include "../XMLParser.h"
 #include <map>
 #include <vector>
@@ -67,5 +67,6 @@ void convertXMLtoJSON(ifstream &file, ofstream &outputFile ){
     convertXMLtoJSONFromTree(root, outputFile);
     freeXmlTree(root);
 }
+
 
 
