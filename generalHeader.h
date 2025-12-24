@@ -1,13 +1,16 @@
+
+
+
 #pragma once
-#include "generalHeader.h"
 
-struct XmlNode {
-    string name;
-    string value;
-    vector<XmlNode*> children;
-    map<string,string> attrs; // attribute name -> value
-    XmlNode() : name(""), value("") {}
-};
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <vector>
+#include <stack>
+#include <algorithm>
+#include <sstream>
+#include <map>
+#include <set>
+using namespace std;
 
-// XML node structure shared across modules. Parsing functions live in
-// `pretty/PrettifyXml.cpp` for now and can be moved to a parser module.
