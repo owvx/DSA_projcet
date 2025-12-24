@@ -100,6 +100,7 @@ void dotFileInput(map<int,user> users, const string& outputName) {
     ofstream outputFile(outputName);
     outputFile << "digraph test{" << endl;
     for (auto &u : users) {
+        outputFile << "\"" << u.second.name << "\"" << endl;
         for (int followerId : u.second.followers) {
             auto it = users.find(followerId);
             if (it == users.end()) continue;
@@ -118,5 +119,6 @@ void visualizeGraph(const string& dotFile, const string& outputFile) {
         cerr << "Error visualizing graph." << endl;
     }
 }
+
 
 
