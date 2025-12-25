@@ -2,6 +2,7 @@
 # XML Editor - DSA Project
 
 A comprehensive command-line XML processing tool that provides various operations for XML files including compression, formatting, conversion, error handling, network analysis, and search functionality.
+### the QT excutable file is in the ui folder
 
 ## Features
 
