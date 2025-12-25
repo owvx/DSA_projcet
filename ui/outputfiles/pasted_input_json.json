@@ -1,28 +1,96 @@
 {"users": {
-    "user": {
-        "followers": {
-            "follower": [{
+    "user": [{
+            "followers": {
+                "follower": [{
+                        "id": {
+                            "_text": "2"
+                        }
+                    }, {
+                        "id": {
+                            "_text": "3"
+                        }
+                    }]
+            },
+            "id": {
+                "_text": "1"
+            },
+            "name": {
+                "_text": "Ahmed Ali"
+            },
+            "posts": {
+                "post": [{
+                        "body": {
+                            "_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        },
+                        "topics": {
+                            "topic": [{
+                                    "_text": "economy"
+                                }, {
+                                    "_text": "finance"
+                                }]
+                        }
+                    }, {
+                        "body": {
+                            "_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        },
+                        "topics": {
+                            "topic": {
+                                "_text": "solar_energy"
+                            }
+                        }
+                    }]
+            }
+        }, {
+            "followers": {
+                "follower": {
                     "id": {
-                        "_text": "2"
+                        "_text": "1"
                     }
-                }, {
+                }
+            },
+            "id": {
+                "_text": "2"
+            },
+            "name": {
+                "_text": "Yasser Ahmed"
+            },
+            "posts": {
+                "post": {
+                    "body": {
+                        "_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    },
+                    "topics": {
+                        "topic": {
+                            "_text": "education"
+                        }
+                    }
+                }
+            }
+        }, {
+            "followers": {
+                "follower": {
                     "id": {
-                        "_text": "4"
+                        "_text": "1"
                     }
-                }]
-        },
-        "id": {
-            "_text": "1"
-        },
-        "name": {
-            "_text": "user1"
-        },
-        "posts": {
-            "post": [{
-                    "_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                }, {
-                    "_text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat."
-                }]
-        }
-    }
+                }
+            },
+            "id": {
+                "_text": "3"
+            },
+            "name": {
+                "_text": "Mohamed Sherif"
+            },
+            "posts": {
+                "post": {
+                    "body": {
+                        "_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    },
+                    "topics": {
+                        "topic": {
+                            "_text": "sports"
+                        }
+                    }
+                }
+            }
+        }]
 }}

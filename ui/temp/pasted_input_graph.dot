@@ -1,10 +1,6 @@
 digraph test{
-"MOHAMED" -> "Karim"
-"MOHAMED" -> "Nour"
-"Karim" -> "MOHAMED"
-"Nour" -> "Karim"
-"M5OHAMED" -> "AHMED"
-"M5OHAMED" -> "Karim"
-"MOHAsMED" -> "MOHAMED"
-"MOHAsMED" -> "Karim"
+"Ahmed Ali" -> "Yasser Ahmed"
+"Ahmed Ali" -> "Mohamed Sherif"
+"Yasser Ahmed" -> "Ahmed Ali"
+"Mohamed Sherif" -> "Ahmed Ali"
 }

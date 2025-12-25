@@ -1,0 +1,90 @@
+<users>
+  <user>
+    <id>1</id>
+    <name>Ahmed Ali</name>
+    <posts>
+      <post>
+        <body>
+          Lorem ipsum football news about AI and sports analytics.
+        </body>
+        <topics>
+          <topic>sports</topic>
+          <topic>ai</topic>
+        </topics>
+      </post>
+      <post>
+        <body>
+          Education systems are evolving with machine learning.
+        </body>
+        <topics>
+          <topic>education</topic>
+          <topic>ai</topic>
+        </topics>
+      </post>
+    </posts>
+    <followers>
+      <follower><id>2</id></follower>
+      <follower><id>3</id></follower>
+      <follower><id>4</id></follower>
+    </followers>
+  </user>
+
+  <user>
+    <id>2</id>
+    <name>Yasser Ahmed</name>
+    <posts>
+      <post>
+        <body>
+          Finance and economy news today.
+        </body>
+        <topics>
+          <topic>finance</topic>
+          <topic>economy</topic>
+        </topics>
+      </post>
+    </posts>
+    <followers>
+      <follower><id>1</id></follower>
+      <follower><id>3</id></follower>
+    </followers>
+  </user>
+
+  <user>
+    <id>3</id>
+    <name>Mohamed Sherif</name>
+    <posts>
+      <post>
+        <body>
+          Sports events analysis using data science.
+        </body>
+        <topics>
+          <topic>sports</topic>
+          <topic>data</topic>
+        </topics>
+      </post>
+    </posts>
+    <followers>
+      <follower><id>1</id></follower>
+    </followers>
+  </user>
+
+  <user>
+    <id>4</id>
+    <name>Sara Ibrahim</name>
+    <posts>
+      <post>
+        <body>
+          Renewable energy and solar power innovations.
+        </body>
+        <topics>
+          <topic>energy</topic>
+          <topic>environment</topic>
+        </topics>
+      </post>
+    </posts>
+    <followers>
+      <follower><id>1</id></follower>
+      <follower><id>3</id></follower>
+    </followers>
+  </user>
+</users>
